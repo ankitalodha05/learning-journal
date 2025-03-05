@@ -1,8 +1,8 @@
-**Creating an AWS Lambda Function to Automate RDS Database and Table Creation**
+**Creating an AWS Lambda Function to connect to RDS Database**
 
 ### Introduction
 
-AWS Lambda is a powerful, serverless computing service that allows you to execute code without provisioning or managing servers. In this document, we will outline the steps required to create an AWS Lambda function that automates the creation of an RDS database and a table within it.
+AWS Lambda is a powerful, serverless computing service that allows you to execute code without provisioning or managing servers. In this document, we will outline the steps required to create an AWS Lambda function that will connect an RDS database.
 
 ### Prerequisites
 
