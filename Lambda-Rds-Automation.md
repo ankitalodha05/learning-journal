@@ -113,3 +113,8 @@ def lambda_handler(event, context):
 
 By following these steps, you have successfully automated the creation of an RDS database and a table using AWS Lambda. This setup eliminates the need for manual database creation, making your cloud infrastructure more efficient and manageable.
 
+-![image](https://github.com/user-attachments/assets/5090d29b-2f49-4497-8536-6dbabf80227c)
+
+-![image](https://github.com/user-attachments/assets/57ff1e04-090e-45c0-92c3-922f4161c4ca)
+
+-![image](https://github.com/user-attachments/assets/51591db4-c8c1-4ffc-810a-d004a6f4682d)
