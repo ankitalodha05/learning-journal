@@ -1,0 +1,107 @@
+# Understanding `requirements.txt` in Python Deployment
+
+When working on a Python project, you often need to install multiple dependencies. Instead of installing them one by one using `pip install <package>`, you can list all the dependencies in a `requirements.txt` file and install them all at once.
+
+---
+
+## 1️⃣ Creating a `requirements.txt` File
+
+The `requirements.txt` file contains a list of all the dependencies required for your project. Each dependency is written on a new line.
+
+### Example:
+```txt
+flask
+mysql-connector-python
+requests
+numpy
+```
+
+You can specify exact versions too:
+```txt
+flask==2.2.2
+mysql-connector-python>=8.0.0
+requests<=2.26.0
+numpy~=1.21.0
+```
+
+---
+
+## 2️⃣ Installing Dependencies Using `requirements.txt`
+
+There are two ways to install dependencies:
+
+### ✅ Method 1: Installing a Single Package
+You can install a package manually using:
+```sh
+pip install flask
+```
+
+### ✅ Method 2: Installing All Dependencies from `requirements.txt`
+Instead of installing dependencies one by one, you can install everything at once using:
+```sh
+pip install -r requirements.txt
+```
+This will install all the dependencies listed in `requirements.txt` with the specified versions.
+
+---
+
+## 3️⃣ Generating `requirements.txt` Automatically
+
+If you have already installed dependencies in your Python environment, you can generate a `requirements.txt` file automatically using:
+```sh
+pip freeze > requirements.txt
+```
+This will create a `requirements.txt` file listing all installed packages and their versions.
+
+---
+
+## 4️⃣ Example: Using `requirements.txt` in a Flask Project
+
+### ✅ Project Structure:
+```sh
+/flask_project
+│-- app.py
+│-- requirements.txt
+```
+
+### ✅ `app.py` (Flask Application)
+```python
+from flask import Flask
+
+app = Flask(__name__)
+
+@app.route("/")
+def hello():
+    return "Hello from Flask!"
+
+if __name__ == "__main__":
+    app.run(debug=True, host="0.0.0.0", port=5000)
+```
+
+### ✅ `requirements.txt`
+```txt
+flask
+```
+
+### ✅ Installation Steps:
+```sh
+# Create a virtual environment (optional)
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Run the Flask app
+python app.py
+```
+
+---
+
+## 📌 Conclusion
+- `requirements.txt` helps manage dependencies efficiently.
+- Installing dependencies from `requirements.txt` is useful for deploying applications consistently.
+- Use `pip freeze > requirements.txt` to generate a `requirements.txt` file from an existing environment.
+- Always use a virtual environment to avoid conflicts between packages.
+
+Would you like a Dockerfile example for containerizing this Flask app? 🚀
