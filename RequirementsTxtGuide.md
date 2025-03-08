@@ -3,6 +3,10 @@
 When working on a Python project, you often need to install multiple dependencies. Instead of installing them one by one using `pip install <package>`, you can list all the dependencies in a `requirements.txt` file and install them all at once.
 
 -![Screenshot 2025-03-08 112716](https://github.com/user-attachments/assets/9806039f-e15e-44cd-966e-f42561bf7ebd)
+-![image](https://github.com/user-attachments/assets/574f9bcd-d060-42d8-b0bd-c48e2e08ad36)
+-![image](https://github.com/user-attachments/assets/546ebbd4-d2c1-4f93-9e8d-a3b1ef4cb31d)
+
+
 
 
 ---
