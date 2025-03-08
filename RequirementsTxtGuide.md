@@ -3,12 +3,6 @@
 When working on a Python project, you often need to install multiple dependencies. Instead of installing them one by one using `pip install <package>`, you can list all the dependencies in a `requirements.txt` file and install them all at once.
 
 -![Screenshot 2025-03-08 112716](https://github.com/user-attachments/assets/9806039f-e15e-44cd-966e-f42561bf7ebd)
--![image](https://github.com/user-attachments/assets/574f9bcd-d060-42d8-b0bd-c48e2e08ad36)
--![image](https://github.com/user-attachments/assets/546ebbd4-d2c1-4f93-9e8d-a3b1ef4cb31d)
-
-
-
-
 ---
 
 ## 1️⃣ Creating a `requirements.txt` File
@@ -106,6 +100,8 @@ python app.py
 ---
 -![Screenshot 2025-03-08 113252](https://github.com/user-attachments/assets/e4e915f7-90aa-48f9-9927-95d7205ba33e)
 -![Screenshot 2025-03-08 113522](https://github.com/user-attachments/assets/741cc6d8-2402-439b-be23-a06a913d682b)
+-![image](https://github.com/user-attachments/assets/574f9bcd-d060-42d8-b0bd-c48e2e08ad36)
+-![image](https://github.com/user-attachments/assets/546ebbd4-d2c1-4f93-9e8d-a3b1ef4cb31d)
 
 ## 📌 Conclusion
 - `requirements.txt` helps manage dependencies efficiently.
