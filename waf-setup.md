@@ -105,6 +105,8 @@ This guide provides a step-by-step approach to setting up AWS WAF (Web Applicati
 
 ## Step 8: Add Rules to Web ACL
 
+now go back to our web application firewall , where we are trying to add rules
+--![Screenshot 2025-03-11 211736](https://github.com/user-attachments/assets/380eb636-fb1f-4fb7-bd7b-439fc5b71ae0)
 ### Block Specific IPs
 
 1. Click **Add Rule** → **IP Set**.
@@ -112,7 +114,7 @@ This guide provides a step-by-step approach to setting up AWS WAF (Web Applicati
 3. Set Action to **Block**.
 4. Click **Save Rule**.
 
--![Screenshot 2025-03-11 211736](https://github.com/user-attachments/assets/380eb636-fb1f-4fb7-bd7b-439fc5b71ae0)
+
 -![Screenshot 2025-03-11 211932](https://github.com/user-attachments/assets/4bd6fed8-f5ae-42e2-93ba-f56736a83c09)
 -![Screenshot 2025-03-11 212227](https://github.com/user-attachments/assets/b98baeb3-51af-406b-9f04-2ceed619b7d9)
 -![Screenshot 2025-03-11 212710](https://github.com/user-attachments/assets/1634f785-d4ae-475f-b09d-94a5a2ddc2d5)
