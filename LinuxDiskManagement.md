@@ -121,9 +121,9 @@ df -h
 ```bash
 sudo umount /mnt/volume
 ```
-------------------
+---
 
-#Comparison of XFS and ext4 Filesystems
+# **Comparison of XFS and ext4 Filesystems**
 
 ## **Introduction**
 When setting up a Linux system, choosing the right filesystem is crucial for performance, scalability, and compatibility. This document compares **XFS** and **ext4** filesystems based on different aspects, helping you decide which one suits your use case.
