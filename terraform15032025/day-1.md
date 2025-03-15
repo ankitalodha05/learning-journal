@@ -1,10 +1,10 @@
+-![image](https://github.com/user-attachments/assets/d4bb4aaa-5c5e-404a-bf00-4c7db5caf06e)
+
+
 **Terraform Basics**
 
 ## **Introduction**
 Terraform is an Infrastructure as Code (IaC) tool that enables you to define and manage cloud resources efficiently. It supports multiple cloud providers such as AWS, Azure, and Google Cloud.
-
--![image](https://github.com/user-attachments/assets/d4bb4aaa-5c5e-404a-bf00-4c7db5caf06e)
-
 
 ## **Authentication & Account Setup**
 Before using Terraform, you need to authenticate your cloud provider account by setting up account keys. This ensures Terraform can interact with the cloud provider and provision resources.
@@ -61,7 +61,21 @@ Terraform generates a blueprint of the infrastructure it will create based on `m
 ```bash
 terraform apply
 ```
-This command provisions the infrastructure as defined in `main.tf`.
+When you run `terraform apply`, Terraform does the following:
+1. **Creates a state file (`terraform.tfstate`)**
+   - If running `terraform apply` for the first time, a `terraform.tfstate` file will be created, storing the current infrastructure state.
+2. **Compares the state file and the desired configuration**
+   - If the `terraform.tfstate` file is already present, Terraform reads it and compares it with the desired state defined in `.tf` files.
+3. **Determines changes needed**
+   - If there are differences, Terraform provides a list of changes before applying them.
+   - If no changes are required, Terraform outputs:
+     ```
+     No changes. Infrastructure is up to date.
+     ```
+4. **Applies necessary changes**
+   - If any modifications are required, Terraform makes the changes accordingly.
+5. **Updates the state file**
+   - Once the changes are applied, Terraform updates `terraform.tfstate` to reflect the new state of the infrastructure.
 
 ### **4. Destroy Resources**
 ```bash
@@ -74,11 +88,12 @@ This command removes all the resources created by Terraform.
 |-------------------|-------------|
 | `terraform init`  | Initialize and download required plugins |
 | `terraform plan`  | Preview the execution plan |
-| `terraform apply` | Create resources as per configuration |
+| `terraform apply` | Create resources as per configuration and update the state file |
 | `terraform destroy` | Remove all created resources |
 
 ## **Conclusion**
 Terraform simplifies cloud infrastructure management using declarative configuration files. By following the workflow, you can efficiently deploy, modify, and destroy resources with minimal manual effort.
 
 Now, Terraform is set up to manage your cloud infrastructure effectively!
+
 
