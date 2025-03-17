@@ -144,7 +144,4 @@ terraform state show aws_instance.example
 
 Understanding `terraform.tfstate` is **critical for managing infrastructure effectively**. By following best practices, you can avoid state corruption, collaborate efficiently, and maintain consistent deployments. 🚀
 
-Terraform allows you to rename the state file, but Terraform will not automatically recognize it unless explicitly specified.
-
-By default, Terraform looks for terraform.tfstate in the working directory. If you rename the state file, running terraform plan alone will not work unless you tell Terraform where to find the new state file.
 
