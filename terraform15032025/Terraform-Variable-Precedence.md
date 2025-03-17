@@ -1,3 +1,5 @@
+-![image](https://github.com/user-attachments/assets/3ef45eab-be81-4614-8100-56e382c3a993)
+
 # Understanding Variable Precedence in Terraform
 
 ## **Scenario 1: Understanding Value Priority in Terraform**
