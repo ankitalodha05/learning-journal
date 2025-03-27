@@ -194,6 +194,17 @@ This way:
   ```bash
   terraform apply -var-file="../config/dev.tfvars"
   ```
+---------------------------------------------------------------------------------------------------------
+
+When you use a **child module** from a **root module**, the child module should work like a **template**.
+
+A template means the child module **should not create any resources by itself**. It should only define what can be created, and **wait for values** from the root module.
+
+If the child module has hardcoded values and creates resources directly, then it may create resources **twice** — once when used directly, and again when used through the root module.
+
+That’s why the child module should have **no hardcoded values**. It should just define variables and let the root module **send the actual values**.
+
+This way, when you run the root module, it **passes values** to the child module and **controls everything**, which helps avoid errors and makes your code reusable.
 
 ---
 
