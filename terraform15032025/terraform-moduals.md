@@ -198,7 +198,7 @@ This way:
 
 When you use a **child module** from a **root module**, the child module should work like a **template**.
 
-A template means the child module **should not create any resources by itself**.
+A template means the child module should not contain any hardcode values means it **should not create any resources by itself**.
 
 It should only define what can be created, and **wait for values** from the root module.
 
