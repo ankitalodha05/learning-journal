@@ -198,7 +198,9 @@ This way:
 
 When you use a **child module** from a **root module**, the child module should work like a **template**.
 
-A template means the child module **should not create any resources by itself**. It should only define what can be created, and **wait for values** from the root module.
+A template means the child module **should not create any resources by itself**.
+
+It should only define what can be created, and **wait for values** from the root module.
 
 If the child module has hardcoded values and creates resources directly, then it may create resources **twice** — once when used directly, and again when used through the root module.
 
@@ -208,5 +210,4 @@ This way, when you run the root module, it **passes values** to the child module
 
 ---
 
-This document gives you a solid understanding of how to work with Terraform modules the right way. Let me know if you'd like this exported as a PDF or want a version tailored to AWS, Azure, or GCP.
-
+T
