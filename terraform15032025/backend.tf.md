@@ -1,7 +1,3 @@
-
----
-
-```markdown
 # 📘 Terraform `backend.tf` – AWS S3 Complete Guide
 
 ---
@@ -38,7 +34,7 @@ terraform {
     encrypt = true
   }
 }
-```
+
 
 ### 🔍 What this does:
 - Stores the Terraform state file in your **S3 bucket**.
