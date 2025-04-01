@@ -34,7 +34,7 @@ terraform {
     encrypt = true
   }
 }
-
+```
 
 ### 🔍 What this does:
 - Stores the Terraform state file in your **S3 bucket**.
@@ -188,8 +188,3 @@ Replace `YOUR_ACCOUNT_ID` and `myterraformstatebucket` with your values.
 📦 With this setup, your Terraform state management using **AWS S3** and **DynamoDB** is secure, scalable, and team-ready!
 
 ```
-
-Let me know if you want:
-- A **chart/diagram** of this setup
-- A **Terraform module** to create S3 + DynamoDB
-- Or a **PDF version** of this guide
