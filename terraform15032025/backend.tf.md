@@ -1,4 +1,4 @@
-Sure! Here's the full document in **Markdown (`.md`)** format:
+
 
 ---
 
@@ -106,7 +106,6 @@ You can create it manually or with Terraform.
 
 ```
 
-Would you like me to export this to a downloadable `.md` or `.pdf` file as well?
 -------------------------------------------------------
 
 
