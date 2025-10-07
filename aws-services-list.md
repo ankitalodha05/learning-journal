@@ -1,14 +1,3 @@
----
-
-# AWS Services Overview
-
-## General AWS Topics
-
-* Cloud Introduction AWS
-* Software Development Life Cycle (SDLC)
-
----
-
 ## EC2 (Elastic Compute Cloud)
 
 * EC2 on default network
